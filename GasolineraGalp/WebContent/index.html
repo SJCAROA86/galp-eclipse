@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="css/estilocss.css">
+<!-- -------------------------------------------------------------------------------------- -->
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+	integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+	crossorigin="anonymous">
+<!-- -------------------------------------------------------------------------------------- -->
+
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<!-- -------------------------------------------------------------------------------------- -->
+<script type="text/javascript" src="js/miscript.js"></script>
+<!-- -------------------------------------------------------------------------------------- -->
+<meta charset="ISO-8859-1">
+<title>INICIO</title>
+</head>
+<body>
+	<header>
+		<div class="cointainer text-center">
+			<div class="row text-center">
+				<div class="col-md-9 ">
+					<h4>Gasolineras GALP Extremadura</h4>
+				</div>
+				<div class="col-md-3" img src="">
+					<!-- foto del logotipo -->
+				</div>
+			</div>
+	</header>
+	<br>
+	<br>
+	<br>
+	<main>
+	<div class="cointainer text-center">
+		<div class="row text-center">
+			<div class="col-md-12 ">
+				<h4>TIPO DE PAGO</h4>
+			</div>
+		</div>
+		<br> <br> <br> <br> <br>
+		<div class="row text-center">
+			<div class="col-md-6">
+				<button id="boton_tarjeta" type="button" class="btn btn-default">TARJETA</button>
+			</div>
+			<div class="col-md-6">
+				<button id="boton_efectivo" type="button" class="btn btn-succes">EFECTIVO</button>
+			</div>
+		</div>
+		<br> <br> <br> <br> <br> <br>
+		<div class="row text-center">
+			<div class="col-md-6 ">
+				<form id="datos_tarjeta" action="ValidarPago" method="get">
+					<input name="numero" type="text" placeholder="DNI"> <input
+						name="password" type="password" placeholder="Pass Tarjet">
+					<input name="EUROS" type="text" placeholder="EUROS"> <input
+						name="enviar" type="submit" value="pagar">
+				</form>
+			</div>
+			<div class="col-md-6">
+				<form id="datos_efectivo" action="ValidarPago" method="get">
+					<input name="EUROS" type="text" placeholder="EUROS"> <input
+						name="enviar" type="submit" value="pagar">
+				</form>
+			</div>
+		</div>
+	</div>
+	</main>
+	<footer>
+		<p>Copyright GALP</p>
+	</footer>
+</body>
+</html>
